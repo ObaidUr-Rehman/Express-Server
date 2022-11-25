@@ -9,8 +9,24 @@ app.get('/abc', (req, res) => {
   console.log("resquest get" + req.ip)
 })
 
+app.get('/getweather', (req, res) => {
+  res.send('Hello World!')
+  console.log("resquest get" + req.ip)
+})
+
+app.get('/gettime', (req, res) => {
+  res.send('Hello World!')
+  console.log("resquest get" + req.ip)
+})
+
+
+
+
+
+
 const __dirname=path.resolve();
 app.use('/',express.static(path.join(__dirname,'/web/build')))
+app.get('*',express.static(path.join(__dirname,'/web/build')))
 
 
 
