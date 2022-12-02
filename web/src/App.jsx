@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState } from "react"
 import axios from "axios";
 
@@ -12,7 +11,7 @@ if (window.location.href.split(":")[0] === "http") {
 function App() {
 
     const [weatherData, setWeatherData] = useState(null)
-    const [cityName, setCityName] = useState("")
+    // const [cityName, setCityName] = useState("")
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -41,7 +40,7 @@ function App() {
                   
                   
           </div>
-               <div>
+               <div className="mydiv">
                   <button className="mybtn" onClick={submitHandler}>Get Weather</button>
                   </div>
       
@@ -53,9 +52,8 @@ function App() {
           <div>
           <div className="info">
 
-              {/* <h1 className="location">
-              {weatherData}
-              </h1> */}
+              <h1 className="location">city:{weatherData?.city}
+              </h1>
 
               <h2 lassName="temp">
                  Current Temp: {weatherData.temp}°C
@@ -78,17 +76,5 @@ function App() {
       </div>
   </>
     );
-=======
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div >
-      <h1>hello react</h1>
-    </div>
-  );
->>>>>>> b4b899999c22fc8e2719eb1f3dbc8e9546e3d5a3
-}
-
+        }
 export default App;
