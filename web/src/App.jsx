@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react"
 import axios from "axios";
 
@@ -77,6 +78,17 @@ function App() {
       </div>
   </>
     );
+=======
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div >
+      <h1>hello react</h1>
+    </div>
+  );
+>>>>>>> b4b899999c22fc8e2719eb1f3dbc8e9546e3d5a3
 }
 
 export default App;
