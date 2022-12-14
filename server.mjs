@@ -2,7 +2,6 @@ import express from 'express';
 import path from 'path';
 import cors from 'cors';
 
-
 const app = express()
 const port = process.env.PORT || 5001;
 
@@ -27,7 +26,6 @@ app.get('/time', (req, res) => {
     console.log("request ip: ", req.ip);
     res.send('Hello World! ' + new Date().toString());
 })
-
 
 const __dirname = path.resolve();
 app.use('/', express.static(path.join(__dirname, './web/build')))
