@@ -6,8 +6,6 @@
     font-family: "Jost", sans-serif;
 }
 
-
-
 body {
     background: #f3f2ef;
     display: flex;
@@ -230,9 +228,6 @@ body > span {
     margin: 2rem auto;
 }
 
-
-
-
 .mybtn{
     padding: 8px;
     border-radius: 10px;
@@ -248,7 +243,6 @@ body > span {
     font-weight: bold;
 
 }
-
 .mydiv{
     text-align: center;
 }
