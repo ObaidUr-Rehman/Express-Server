@@ -8,6 +8,7 @@ if (window.location.href.split(":")[0] === "http") {
 }
 
 
+
 function App() {
 
     const [weatherData, setWeatherData] = useState(null)
@@ -45,6 +46,7 @@ function App() {
                   </div>
       
 
+
       { !weatherData ? (
           <p className='errorMsg'>No Data Found</p>
       ) : ( 
@@ -52,16 +54,20 @@ function App() {
           <div>
           <div className="info">
 
+          
               <h1 className="location">city:{weatherData?.city}
               </h1>
+
 
               <h2 lassName="temp">
                  Current Temp: {weatherData.temp}°C
               </h2>
 
+
               <h3 className="tempmin_max"> 
               Min: {weatherData.min}°C | Max: {weatherData.max}°C
               </h3>
+
 
           </div>
 
